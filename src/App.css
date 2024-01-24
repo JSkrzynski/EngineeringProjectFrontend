@@ -1,0 +1,449 @@
+.App {
+  width: auto;
+  text-align: center;
+}
+.Topnav {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+}
+button {
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  background-color: #333;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+}
+.TopnavButton {
+  height: 100%;
+  font-size: 18px;
+}
+.TopnavButton:hover {
+  background-color: #4e4e4e;
+}
+#cancelButton {
+  margin-right: 5px;
+  margin-left: auto;
+  background-color: #d9534f;
+}
+#cancelButton:hover {
+  background-color: #d93731;
+}
+#exportAllButton {
+  margin-left: 5px;
+  margin-right: auto;
+}
+#exportButton {
+  margin-left: auto;
+  margin-right: 5px;
+}
+#exportChosenButton {
+  margin-right: 5px;
+}
+input[type="file"] {
+  box-shadow: none;
+}
+input[type="checkbox"] {
+  height: 17px;
+  width: 17px;
+}
+.SameLengthInputs {
+  width: 150px;
+}
+input[type="text"],
+input[type="password"],
+select {
+  height: 20px;
+  min-width: 150px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 4px;
+  border: none;
+}
+.TitleInput {
+  min-width: 150px;
+  width: 90%;
+}
+.DetailsPopupInner,
+.DetailsPopup,
+.Popup,
+.PopupInner,
+input[type="text"],
+input[type="password"],
+.GoogleLoginImg,
+select,
+textarea {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+}
+select {
+  height: 30px;
+  width: 158px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.GoogleLoginImg {
+  width: 200px;
+}
+input[type="file"] {
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
+}
+.MarkerFileInput {
+  margin-right: -90px;
+}
+textarea {
+  margin-bottom: 10px;
+  resize: none;
+  border: none;
+  padding: 4px;
+}
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+.TableButton,
+.TableAddButton {
+  width: 100%;
+  height: 100%;
+}
+.DetailsButton {
+  width: 150px;
+}
+.TableAddButton {
+  color: #333;
+  background-color: lightgray;
+  font-weight: bold;
+}
+.ButtonContainer {
+  margin-bottom: 10px;
+  height: 30px;
+}
+.ButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.WhoAmI {
+  margin-right: 10px;
+  margin-left: auto;
+  font-size: smaller;
+}
+.LogoutButton,
+.LoginButton {
+  margin-right: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #4e4e4e;
+  color: white;
+}
+.MarkersButton,
+.UserMarkersButton {
+  margin-right: 5px;
+}
+.UsersButton,
+.AllMarkersButton {
+  margin-left: 5px;
+}
+.SubmitButton {
+  margin-top: 10px;
+}
+.CloseButton {
+  background-color: #d12a2a;
+  align-self: flex-end;
+  float: right;
+}
+.ConfirmLoginButton {
+  margin-top: 5px;
+}
+.DeleteButton {
+  align-self: flex-end;
+  float: right;
+  background-color: #d12a2a;
+  font-size: 14px;
+  border-top: 10px;
+}
+.DeleteButton:hover,
+.CloseButton:hover {
+  background-color: #d9534f;
+}
+h2 {
+  color: #333;
+}
+table {
+  min-width: 35%;
+  margin: 25px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  text-align: left;
+}
+table thead tr {
+  background-color: #333;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  height: 35px;
+}
+table .NormalTableThead {
+  height: 43px;
+}
+table th {
+  cursor: pointer;
+}
+table th,
+td {
+  padding: 7px;
+}
+table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+table tbody tr:nth-child(even) {
+  background-color: #e7e5e5;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+table tbody tr:last-child {
+  border-bottom: 2px solid #333;
+}
+.PageChooser {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.DetailsLabel {
+  margin-top: 10px;
+}
+.PanelPart {
+  margin-top: 20px;
+}
+.Popup,
+.DetailsPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PopupInner,
+.DetailsPopupInner,
+.InfoPopupInner {
+  border: 1px solid #333;
+  border-radius: 2%;
+}
+.InfoPopupInner a {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.PopupInner,
+.InfoPopupInner {
+  position: relative;
+  padding: 32px;
+  min-width: 30%;
+  width: auto;
+  background-color: white;
+}
+.InfoPopupInner .InfoImg {
+  height: 220px;
+}
+.PopupInner .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.LatLngContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.LatInput {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+a:hover {
+  text-decoration: none;
+}
+.DetailsPopupInner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 32px;
+  width: auto;
+  min-width: 50%;
+  max-width: 80%;
+  min-height: 68vh;
+  max-height: 79vh;
+  background-color: white;
+}
+.DetailsPopupContent {
+  display: flex;
+}
+.IframeDiv {
+  max-width: 55%;
+  width: 55%;
+}
+.DetailsIframe,
+.AdminsDetailsIframe {
+  width: 100%;
+  height: 85%;
+  border: 0;
+  max-width: 100%;
+}
+.AdminsDetailsIframe {
+  margin-top: 6vh;
+}
+.DetailsIframe {
+  height: 50vh;
+}
+.Details {
+  width: 50%;
+  max-width: 50%;
+  margin-left: 20px;
+  text-align: left;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+.UnverifiedText {
+  color: red;
+}
+.AdminRole {
+  color: #0000dc;
+}
+.RadioContainer,
+.RadioContainerUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.RadioContainer {
+  margin-left: -18px;
+}
+.RadioContainerUser {
+  margin-left: -25px;
+}
+.RadioContainer label,
+.RadioContainerUser label {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+input[type="radio"] {
+  margin-bottom: 10px;
+  height: 20px;
+  width: 20px;
+}
+.DescriptionTextarea {
+  width: 90%;
+  height: 50px;
+}
+.AddMarkerDescTextarea {
+  width: 270px;
+  height: 50px;
+}
+.AddedBy {
+  margin-top: 10px;
+}
+.ChangePhoto {
+  margin-top: 10px;
+}
+.FullScreenImageOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MarkerImg {
+  width: max-content;
+  max-height: 120px;
+  cursor: pointer;
+}
+.FullScreenImage {
+  max-width: 90%;
+  max-height: 90%;
+  cursor: pointer;
+}
+.FileLoader {
+  margin-bottom: 5px;
+}
+.InfoLink {
+  margin-bottom: 20px;
+}
+.JWTInputs {
+  margin-top: 15px;
+}
+.MarkerFileInput {
+  margin-top: 15px;
+}
+.PaginationButtonLeft,
+.PaginationButtonRight {
+  margin-left: auto;
+}
+.PaginationButtonRight {
+  margin-right: 5px;
+}
+.PaginationButtonLeft {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 720px) {
+  .Topnav {
+    height: auto;
+  }
+  .TopnavButton {
+    font-size: 12px;
+  }
+  .LogoutButton {
+    float: right;
+    margin-bottom: 10px;
+  }
+  .App {
+    word-wrap: break-word;
+  }
+  table thead {
+    display: none;
+  }
+  td,
+  thead {
+    display: block;
+    border: 1px solid #333;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .InfoPopupInner {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  .DetailsPopupInner {
+    max-height: 90vh;
+    /* Dla małych ekranów zmniejszamy maksymalną wysokość */
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-height: 900px) {
+  .DetailsPopupInner {
+    max-height: 90vh;
+    /* Dla małych ekranów zmniejszamy maksymalną wysokość */
+    overflow-y: auto;
+  }
+}
